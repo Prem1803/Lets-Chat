@@ -1,0 +1,17 @@
+{
+  "name": "lets-chat",
+  "version": "1.0.0",
+  "description": "1-1 Calling and Messaging App ",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Prem",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  }
+}
