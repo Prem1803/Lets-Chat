@@ -51,5 +51,6 @@
   },
   "devDependencies": {
     "@types/simple-peer": "^9.11.4"
-  }
+  },
+  "proxy": "http://localhost:5000/"
 }
