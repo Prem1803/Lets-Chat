@@ -1,6 +1,6 @@
+import { VideoChatActions, actionTypes } from "../actions/types";
 import { Reducer } from "redux";
 import SimplePeer from "simple-peer";
-import { VideoChatActions, actionTypes } from "../actions/types";
 
 
 

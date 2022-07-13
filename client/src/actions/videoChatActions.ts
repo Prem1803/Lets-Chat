@@ -1,9 +1,10 @@
-import { Dispatch } from "redux";
-import { ThunkAction } from "redux-thunk";
-import SimplePeer from "simple-peer";
 import { actionTypes, CallStatus, ClearVideChatState } from "./types";
 import { showAlert } from "./alertActions";
 import { RootState } from "../store";
+import { Dispatch } from "redux";
+import { ThunkAction } from "redux-thunk";
+import SimplePeer from "simple-peer";
+
 import { currentPeerConnection, setCurrentPeerConnection } from "../socket/socketConnection";
 
 export const setLocalStream = (stream: MediaStream | null) => {
