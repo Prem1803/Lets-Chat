@@ -49,8 +49,8 @@
       "last 1 safari version"
     ]
   },
+  "proxy": "http://localhost:5000",
   "devDependencies": {
     "@types/simple-peer": "^9.11.4"
-  },
-  "proxy": "http://localhost:5000/"
+  }
 }
