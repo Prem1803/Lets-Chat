@@ -6,8 +6,7 @@ import {
     inviteFriendArgs,
 } from "./types";
 
-const BASE_URL = "http://localhost:5000"; 
-// const BASE_URL = "https://saliks-discord.herokuapp.com/";
+let BASE_URL:string = process.env.REACT_APP_FRONTEND || '';
 
 const api = axios.create({
     baseURL: BASE_URL
@@ -47,6 +46,8 @@ const checkForAuthorization = (error: any) => {
 
 export const login = async ({ email, password }: LoginArgs) => {
     try {
+console.log(process.env.REACT_APP_FRONTEND);
+
         const res = await api.post<AuthResponse>("/api/auth/login", {
             email,
             password,

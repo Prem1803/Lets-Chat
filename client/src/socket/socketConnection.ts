@@ -102,10 +102,7 @@ const setCurrentPeerConnection = (peerConnection: any) => {
 }
 
 let socket: Socket<ServerToClientEvents, ClientToServerEvents>;
-
-const SERVER_URL = "http://localhost:5000";
-// const SERVER_URL = "https://saliks-discord.herokuapp.com/";
-
+let SERVER_URL:string = process.env.REACT_APP_FRONTEND || '';
 const connectWithSocketServer = (userDetails: UserDetails) => {
     socket = io(SERVER_URL, {
         auth: {
