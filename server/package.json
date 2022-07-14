@@ -1,7 +1,7 @@
 {
-  "name": "discord-clone-backend",
+  "name": "lets-chat-backend",
   "version": "1.0.0",
-  "description": "Backend of discord clone",
+  "description": "Backend of lets chat",
   "main": "dist/index",
   "typings": "dist/index",
   "scripts": {

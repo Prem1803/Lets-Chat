@@ -51,7 +51,7 @@ export const registerUser = (credentials: RegisterArgs) => {
                 payload: response.userDetails,
             });
 
-            dispatch<any>(showAlert("Welcome to the Discord!"));
+            dispatch<any>(showAlert("Welcome to the Let's Chat!"));
         }
     };
 }; 
